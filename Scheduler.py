@@ -19,7 +19,7 @@ rem_month = now_date.month
 rem_year = now_date.year
 
 t = datetime(rem_year, rem_month, rem_day, 9, 0)
-local = pytz.timezone("Asia/Kolkata")
+local = pytz.timezone("Europe/Italy")
 local_dt = local.localize(t, is_dst=None)
 utc_dt = local_dt.astimezone(pytz.utc)
 
